@@ -60,7 +60,6 @@ steps:
 ## Install Trivy with non-default token
 There are cases when `github.token` (default value for `actions/checkout`) contains an invalid token for `http://github.com`.
 One of example for this when using GitHub Enterprise Server (GHES).
-See more info in https://github.com/step-security/setup-trivy/issues/10
 
 To properly install Trivy, you need to populate `token` from a secret or another step (e.g. from https://github.com/actions/create-github-app-token)
 
