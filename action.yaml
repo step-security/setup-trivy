@@ -74,7 +74,7 @@ runs:
     - name: Restore Trivy binary from cache
       if: ${{ inputs.cache == 'true' && inputs.version != 'latest' }}
       id: cache
-      uses: actions/cache/restore@9255dc7a253b0ccc959486e2bca901246202afeb # v5.0.1
+      uses: actions/cache/restore@cdf6c1fa76f9f475f3d7449005a359c84ca0f306 # v5.0.3
       with:
         path: ${{ steps.binary-dir.outputs.dir }}
         key: trivy-binary-${{ inputs.version }}-${{ runner.os }}-${{ runner.arch }}
@@ -117,7 +117,7 @@ runs:
     ## So we need to save the binary right after installation.
     - name: Save Trivy binary to cache
       if:  ${{ inputs.cache == 'true' && inputs.version != 'latest' && steps.cache.outputs.cache-hit != 'true' }}
-      uses: actions/cache/save@9255dc7a253b0ccc959486e2bca901246202afeb # v5.0.1
+      uses: actions/cache/save@cdf6c1fa76f9f475f3d7449005a359c84ca0f306 # v5.0.3
       with:
         path: ${{ steps.binary-dir.outputs.dir }}
         key: trivy-binary-${{ inputs.version }}-${{ runner.os }}-${{ runner.arch }}
