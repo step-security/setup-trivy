@@ -1,0 +1,18 @@
+{
+   "schema_version": "1",
+   "onboarding_type": "copied",
+   "archived": false,
+   "maintained_action_name": "step-security/setup-trivy",
+   "upstream_full_repo_name": "aquasecurity/setup-trivy",
+   "action_type": "composite",
+   "last_release": {
+     "tag_name": "v0.2.6",
+     "created_at": "2026-05-13T08:50:56Z",
+     "published_at": "2026-05-23T15:02:40Z"
+   },
+   "sync": {
+     "ignore_presets": [
+       "defaults_v1"
+     ]
+   }
+ }
